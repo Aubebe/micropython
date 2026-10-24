@@ -31,3 +31,8 @@ jobs:
       run: tools/ci.sh rp2_setup
     - name: Build
       run: tools/ci.sh rp2_build
+    - name: Upload Firmware Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: firmware_RPI_PICO_W
+        path: ports/rp2/build-RPI_PICO_W/firmware.uf2
