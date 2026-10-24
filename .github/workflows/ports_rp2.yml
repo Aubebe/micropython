@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
           name: firmware_RPI_PICO_W
-          path: ports/rp2/build*/**/*.uf2
+          path: ports/rp2/firmware_RPI_PICO_W.uf2
